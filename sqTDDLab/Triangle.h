@@ -34,4 +34,9 @@ public:
 		double retValue = (sideA * sideB) * 0.5;
 		return retValue;
 	}
+
+	double Triangle::CalculateMissingAngle()
+	{
+		return 0;
+	}
 }; 

@@ -26,5 +26,13 @@ namespace UnitTest
 			double expectedResult = (4.0 * 4.0) * 0.5;
 			Assert::AreEqual(area, expectedResult);
 		}
+
+		TEST_METHOD(missingAngleTest)
+		{
+			Triangle obj(60, 60, false);
+			double missingAngle = obj.CalculateMissingAngle();
+			double expectedResult = 180 - (60 + 60);
+			Assert::AreEqual(missingAngle, expectedResult);
+		}
 	};
 }
