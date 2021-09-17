@@ -37,6 +37,7 @@ public:
 
 	double Triangle::CalculateMissingAngle()
 	{
-		return 0;
+		double retValue = 180 - (angleA + angleB);
+		return retValue;
 	}
 }; 
