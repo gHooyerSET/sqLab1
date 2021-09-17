@@ -31,6 +31,7 @@ public:
 
 	double Triangle::CalculateAreaRightTriangle()
 	{
-		return 0;
+		double retValue = (sideA * sideB) * 0.5;
+		return retValue;
 	}
 }; 
