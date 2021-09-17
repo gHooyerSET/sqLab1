@@ -39,6 +39,13 @@ public:
 		}
 	}
 
+	Triangle::Triangle(double angleC, double sideA, double sideB)
+	{
+		this->angleC = angleC;
+		this->sideA = sideA;
+		this->sideB = sideB;
+	}
+
 	double Triangle::CalculateHypotenuse()
 	{
 		double retValue = sqrt( (sideA * sideA) + (sideB * sideB) );
@@ -69,7 +76,13 @@ public:
 
 	bool Triangle::IsValidTriangle()
 	{
-		return true;
+		bool retValue = false;
+		bool angleTotal = angleA + angleB + angleC;
+		if (angleTotal == 180)
+		{
+			retValue = true;
+		}
+		return retValue;
 	}
 
 }; 

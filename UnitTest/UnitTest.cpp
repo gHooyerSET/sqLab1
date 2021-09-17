@@ -48,6 +48,5 @@ namespace UnitTest
 			bool isValidTriangle = obj.IsValidTriangle();
 			Assert::AreEqual(isValidTriangle, false);
 		}
-
 	};
 }

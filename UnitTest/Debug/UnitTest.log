@@ -1,3 +1,4 @@
 ﻿  UnitTest.cpp
+C:\Users\gerri\OneDrive\Documents\Year 2\Semester 1\Software Quality\Labs\sqLab1\sqTDDLab\Triangle.h(81,21): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
      Creating library C:\Users\gerri\OneDrive\Documents\Year 2\Semester 1\Software Quality\Labs\sqLab1\sqTDDLab\Debug\UnitTest.lib and object C:\Users\gerri\OneDrive\Documents\Year 2\Semester 1\Software Quality\Labs\sqLab1\sqTDDLab\Debug\UnitTest.exp
   UnitTest.vcxproj -> C:\Users\gerri\OneDrive\Documents\Year 2\Semester 1\Software Quality\Labs\sqLab1\sqTDDLab\Debug\UnitTest.dll
