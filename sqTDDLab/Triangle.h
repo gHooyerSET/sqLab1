@@ -23,6 +23,22 @@ public:
 		}
 	}
 
+	Triangle::Triangle(double a, double b, double c, bool areSideLengths)
+	{
+		if (areSideLengths == true)
+		{
+			this->sideA = a;
+			this->sideB = b;
+			this->sideC = c;
+		}
+		else
+		{
+			this->angleA = a;
+			this->angleB = b;
+			this->angleC = c;
+		}
+	}
+
 	double Triangle::CalculateHypotenuse()
 	{
 		double retValue = sqrt( (sideA * sideA) + (sideB * sideB) );
@@ -43,7 +59,12 @@ public:
 
 	double Triangle::IsRightTriangle()
 	{
-		return false;
+		bool retValue = false;
+		if (angleA == 90 || angleB == 90 || angleC == 90)
+		{
+			retValue = true;
+		}
+		return retValue;
 	}
 
 }; 

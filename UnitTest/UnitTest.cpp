@@ -41,5 +41,7 @@ namespace UnitTest
 			bool rightTriangle = obj.IsRightTriangle();
 			Assert::AreEqual(rightTriangle, true);
 		}
+
+
 	};
 }
