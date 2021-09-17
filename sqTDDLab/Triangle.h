@@ -40,4 +40,10 @@ public:
 		double retValue = 180 - (angleA + angleB);
 		return retValue;
 	}
+
+	double Triangle::IsRightTriangle()
+	{
+		return false;
+	}
+
 }; 

@@ -34,5 +34,12 @@ namespace UnitTest
 			double expectedResult = 180 - (60 + 60);
 			Assert::AreEqual(missingAngle, expectedResult);
 		}
+
+		TEST_METHOD(isRightTriangleTest)
+		{
+			Triangle obj(90, 40, false);
+			bool rightTriangle = obj.IsRightTriangle();
+			Assert::AreEqual(rightTriangle, true);
+		}
 	};
 }
