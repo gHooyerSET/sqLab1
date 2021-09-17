@@ -48,5 +48,13 @@ namespace UnitTest
 			bool isValidTriangle = obj.IsValidTriangle();
 			Assert::AreEqual(isValidTriangle, false);
 		}
+
+		TEST_METHOD(missingSideTest)
+		{
+			Triangle obj(35.0, 5.0, 7.0);
+			double missingSide = obj.CalculateMissingSide();
+			double expectedResult = sqrt((5.0 * 5.0) + (7.0 * 7.0) - cos(35.0));
+			Assert::AreEqual(missingSide, expectedResult);
+		}
 	};
 }

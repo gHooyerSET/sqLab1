@@ -85,4 +85,9 @@ public:
 		return retValue;
 	}
 
+	double Triangle::CalculateMissingSide()
+	{
+		return -1;
+	}
+
 }; 
