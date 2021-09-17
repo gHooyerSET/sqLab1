@@ -13,9 +13,9 @@ namespace UnitTest
 		
 		TEST_METHOD(hypotenuseTest)
 		{
-			Triangle obj;
+			Triangle obj(4.0, 4.0);
 			double hypotenuse = obj.CalculateHypotenuse();
-			double expectedResult = sqrt( ( 4 * 4 ) + ( 4 * 4 ) );
+			double expectedResult = sqrt( ( 4.0 * 4.0 ) + ( 4.0 * 4.0 ) );
 			Assert::AreEqual(hypotenuse, expectedResult);
 		}
 	};

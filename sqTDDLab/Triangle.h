@@ -1,10 +1,21 @@
 #pragma once
+#include <math.h>
 
 class Triangle
 {
+private:
+	double sideA, sideB, sideC;
+	double angleA, angleB, angleC;
 public:
-	double CalculateHypotenuse()
+	Triangle::Triangle(double sideA, double sideB)//Incomplete constructor for hypotenuse test
 	{
-		return 3.0;
+		this->sideA = sideA;
+		this->sideB = sideB;
+	}
+
+	double Triangle::CalculateHypotenuse()
+	{
+		double retValue = sqrt((sideA * sideA) + (sideB * sideB));
+		return retValue;
 	}
 }; 
