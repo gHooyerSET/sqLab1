@@ -87,7 +87,8 @@ public:
 
 	double Triangle::CalculateMissingSide()
 	{
-		return -1;
+		double missingSide = sqrt((sideA * sideA) + (sideB * sideB) - cos(angleC));
+		return missingSide;
 	}
 
 }; 
