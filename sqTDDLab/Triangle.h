@@ -67,4 +67,9 @@ public:
 		return retValue;
 	}
 
+	bool Triangle::IsValidTriangle()
+	{
+		return true;
+	}
+
 }; 

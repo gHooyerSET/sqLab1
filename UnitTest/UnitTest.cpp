@@ -42,6 +42,12 @@ namespace UnitTest
 			Assert::AreEqual(rightTriangle, true);
 		}
 
+		TEST_METHOD(isValidTriangle)
+		{
+			Triangle obj(90, 90, 90, false);
+			bool isValidTriangle = obj.IsValidTriangle();
+			Assert::AreEqual(isValidTriangle, false);
+		}
 
 	};
 }
